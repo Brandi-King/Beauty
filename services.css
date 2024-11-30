@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+    background-color: rgba(53, 31, 219, 1);
+    font-family: "Lucida Grande";
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(31, 219, 189, 1);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    padding-top: 50px; /* Adjust padding for fixed navbar */
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.header-logo img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 16px;
+	margin-bottom: 80px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card h3 {
+    margin: 16px 0 8px;
+}
+
+.service-card p {
+    margin: 0 0 8px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(31, 219, 189, 1);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+

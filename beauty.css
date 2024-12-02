@@ -125,8 +125,6 @@ main {
 }
 
 
-/* Existing styles... */
-
 /* Main Content Styles */
 .main {
     padding: 20px;
@@ -244,6 +242,77 @@ main {
     }
 }
 
+/* Blog Grid Styles */ 
+.blog-grid { 
+display: grid; 
+grid-template-columns: repeat(auto-fit, minmax(250px, auto)); 
+gap: 16px; 
+margin-bottom: 80px; 
+} 
+.blog-card { 
+background: white; 
+border: 1px solid #ccc; 
+padding: 16px; 
+margin: 16px 0; 
+text-align: center; 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+.blog-card img { 
+width: 100%; 
+height: auto; 
+} 
+.blog-card h3 { 
+margin: 16px 0 8px; } 
+
+.blog-card p { 
+margin: 0 0 8px;
+}
+
+/* Existing styles... */ 
+/* Intro Slide Styles */ 
+.intro-slide { 
+background: url('Images/intro-background.jpg') no-repeat center center/cover; /* Replace with your background image */ 
+color: white; 
+height: 100vh;
+display: flex; 
+justify-content: center; 
+align-items: center; 
+text-align: center; 
+position: relative; 
+} 
+
+.intro-content { 
+background: rgba(0, 0, 0, 0.6);
+ padding: 20px; 
+border-radius: 10px; 
+} 
+
+.intro-content img {
+ width: 100px; 
+height: auto; 
+margin-bottom: 20px; 
+} 
+
+.intro-content h1 { 
+font-size: 3em; 
+margin-bottom: 10px; 
+} 
+
+.intro-content p { 
+font-size: 1.2em; 
+margin-bottom: 20px; 
+} 
+
+.cta-button {
+background-color: rgba(31, 219, 189, 1); 
+color: white; 
+padding: 10px 20px; 
+text-decoration: none; 
+border-radius: 5px; 
+} 
+
+.cta-button:hover { background-color: #1abbda;
+}
 
 
 /* Footer */

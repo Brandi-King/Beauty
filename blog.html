@@ -3,52 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hair and Skin Care - Home</title>
+<title>Hair and Skin Care - Blog</title>
 <link rel="stylesheet" href="beauty.css">
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-<style>
-    body {
-        background-color: #f5f5f5;
-    }
-    .navbar {
-        background-color: rgba(31, 219, 189, 1);
-        overflow: hidden;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    .product-card img {
-        width: 100%;
-        height: auto;
-    }
-</style>
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <div class="navbar">
     <a href="home.html">Home</a>
-	<a href="index">Main</a>
+	<a href="index.html">Main</a>
     <a href="services.html">Services Offered</a>
     <a href="blog.html">Blog</a>
     <a href="about.html">About Me</a>
 </div>
 
 <!-- Header Section with Logo Image -->
-<header style="padding-top: 50px;"> <!-- Adjust padding for fixed navbar -->
+<header style="padding-top: 50px;">
     <div class="header-logo">
         <img src="Images/logo.jpeg" alt="Hair & Skin Care Logo">
     </div>
@@ -57,17 +28,33 @@
 </header>
 
 <!-- Main Section -->
-<main>
-    <div class="content">
-        <section id="blog">
-            <h2>Hair Care</h2>
-            <p>Discover the best tips and products for healthy hair.</p>
-        </section>
-        <section>
-            <h2>Skin Care</h2>
-            <p>Learn how to maintain glowing and healthy skin.</p>
-        </section>
-    </div>
+<main class="main">
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <a href="https://sites.google.com/view/brandis-beauty/pimple-popping">
+                    <img src="Images/facial_service.png" alt="Blog Post 1">
+                    <h3>Pimple Popping Blog</h3>
+                    <p>To Pop Your Pimples or Not To Pop Your Pimples.</p>
+                </a>
+            </div>
+            <div class="blog-card">
+                <a href="https://sites.google.com/view/brandis-beauty/hair-trimming">
+                    <img src="Images/cutting_hair.png" alt="Blog Post 2">
+                    <h3>Trimming Your Hair Blog</h3>
+                    <p>To Trim or Not To Trim Your Hair.</p>
+                </a>
+            </div>
+            <div class="blog-card">
+                <a href="https://sites.google.com/view/brandis-beauty/skin-care-routine">
+                    <img src="Images/facial_steam.png" alt="Blog Post 3">
+                    <h3>Skincare Routine Blog</h3>
+                    <p>Creating a Perfect Daily Skincare Routine.</p>
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- Footer Section -->
@@ -78,3 +65,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+

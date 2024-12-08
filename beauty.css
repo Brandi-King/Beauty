@@ -104,7 +104,7 @@ main {
 
 .product-grid {
     display: grid;
-    gap: 20px;
+    gap: 16px;
 	grid-template-columns: repeat(4, minmax(100px, auto));
 }
 
@@ -132,8 +132,9 @@ main {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(4, auto);
     gap: 16px;
+	margin-bottom: 80px;
 }
 
 .product-card {
@@ -417,13 +418,26 @@ transition: transform 0.3s ease-in-out;
 transform: scale(1.2) rotate(360deg); 
 }
 
+#contact {
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	max-width: 100%;
+	margin: 40px auto;
+	text-align: left;
+}
 
+#contact {
+	display: flex;
+	flex-direction: column;
+}
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: var(--color-secondary);
+    background-color: rgba(31, 219, 189,1);
     color: white;
+	width: 100%;
 }
 
 
@@ -444,4 +458,19 @@ footer {
 }
 .instagram-button {
     background-color: #e4405f; /* Instagram pink */
+}
+@media (max-width: 768px) {
+	.navbar a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.intro-content h1 {
+		font-size: 2em;
+	}
+	.intro-content p,
+	.product-card p,
+	.special-card p {
+		font-size: 1em;
+	}
 }

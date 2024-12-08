@@ -315,6 +315,109 @@ border-radius: 5px;
 }
 
 
+/* Spinning Grid Styles */
+.spinning-grid {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.spinning-grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.spinning-grid-item {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.spinning-grid-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* Contact Form Styles */ 
+#contact { padding: 20px; 
+background-color: #f9f9f9;
+border-radius: 10px; 
+max-width: 600px; 
+margin: 40px auto; 
+text-align: left; 
+} 
+
+#contact form { 
+display: flex; 
+flex-direction: column; 
+} 
+
+#contact label { 
+margin: 10px 0 5px; 
+font-weight: bold; 
+} 
+
+#contact input, 
+#contact text area { 
+padding: 10px; 
+margin-bottom: 20px; 
+border: 1px solid #ccc; 
+border-radius: 5px; 
+font-size: 1em; 
+} 
+
+#contact button { 
+padding: 10px 20px; 
+background-color: rgba(31, 219, 189, 1); 
+color: white; 
+border: none; 
+border-radius: 5px; 
+cursor: pointer; 
+} 
+
+#contact button:hover { 
+	background-color: #1abbda;
+}
+
+
+.header-logo { 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+} 
+
+.header-logo .main-logo { 
+margin: 10px 20px; 
+}
+
+.header-logo .side-logo { 
+width: 250px; 
+height: auto; 
+padding: 0 20px;
+border-radius: 50%; 
+transition: transform 0.3s ease-in-out; 
+} 
+
+/* Special Effect for Side Logos */ 
+.header-logo .side-logo:hover { 
+transform: scale(1.2) rotate(360deg); 
+}
+
+
 /* Footer */
 footer {
     text-align: center;
